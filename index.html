@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>To Do's</title>
+  </head>
+  <body>
+    <!-- <header> -->
+
+    <!-- </header> -->
+    <main>
+      <aside>
+        <article>
+          <button class="button-86" id="todoLabel">Todo</button>
+        </article>
+        <article>
+          <button class="button-86" id="doingLabel">Doing</button>
+        </article>
+        <article>
+          <button class="button-86" id="doneLabel">Done</button>
+        </article>
+        <article>
+          <button class="button-86" id="allLabel">All</button>
+        </article>
+      </aside>
+      <h2 id="pageTitle">To Do List</h2>
+
+      <section class="sec-form">
+        <article class="taskCreator">
+          <div class="taskAddDiv">
+            <form id="newTaskForm" onsubmit="onTaskSubmit(); return false;">
+              <input id="newTaskInput" value="" placeholder="Add your task" />
+              <button type="submit" name="taskSubmit">
+                <i id="addTask" class="fa-solid fa-circle-plus"></i>
+              </button>
+            </form>
+            <button name="randomTask">
+              <img src="./images/random.png" alt="random" id="randomTask" height="20px">
+            </button>
+            <button id="filterAll" class="filter-tasks">
+              <img src="./images/sort.png" alt="sort" height="25px">
+            </button>
+          </div>
+        </article>
+        <article class="tasks-list">
+          <h2 id="taskTitle">Tasks</h2>
+          <div id="tasks" class="">
+            <!--
+            <div class="taskDiv todoTask">
+          <button>
+          <i class="fa fa-circle" id="validate"></i></button>
+          <div class="taskContent">
+            <input class="content" type="text"
+            value = ""
+             readonly="readonly"/>
+          </div>
+          <div class="dropdown">
+            <select id="selectPriority">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <button>
+            <i class="fa fa-arrow-down" id="sendToDoing"></i>
+          </button>
+          <button>Edit</button>
+          <button>
+            <i class="fa-solid fa-trash-can" id="deleteTaskImg"></i>
+        </button>
+      </div>
+            -->
+          </div>
+        </article>
+      </section>
+      <div>
+        <img src="./images/question.png" width="60px" alt="how to image" id="how-to">
+        <div class="how-to-use" id="howToDiv">
+          <img src="./images/How-to-use.jpg" alt="how to use" height="400px">
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
